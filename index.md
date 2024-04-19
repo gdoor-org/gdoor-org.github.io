@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: frontpage
 ---
 
-Gira is a german manufacturer of house appliances, including door systems. These systems are connected via a proprietary two wire bus system. GDOOR is a project to collect and document findings about the Gira Door System, all figured out by reverse engineering.
+Gira is a german manufacturer of house appliances, including door systems. These systems are connected via a proprietary two wire bus system. GDOOR is a project to collect and document findings about the Gira TKS Door System, all figured out by reverse engineering.
 
 <p align="center">
 <a href="./assets/images/hardware.png" target="blank"><img src="./assets/images/hardware.png" width="200px"/></a>

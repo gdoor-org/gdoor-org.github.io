@@ -26,7 +26,6 @@
       <div id="header">
         <nav>
           <ul>
-            <li class="fork"><a href="./">Home</a></li>
             {% include topmenu.html %}
           </ul>
         </nav>
@@ -35,6 +34,11 @@
     <div class="wrapper">
 
       <section>
+        <div id="title">
+          <h1><img src="./assets/images/logo.png" width="200px"/></h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <hr>
+        </div>
 
         {{ content }}
 

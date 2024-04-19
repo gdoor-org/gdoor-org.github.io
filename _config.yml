@@ -21,7 +21,7 @@
 title: GDOOR
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The GDOOR hardware adapter allows the integration of a Gira door bell system into a smart home.
+  The GDOOR hardware adapter allows the integration of a Gira TKS door bell system into a smart home.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gdoor-org.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: GDOOR

@@ -34,6 +34,16 @@
 
     <div class="wrapper">
 
+      {% if page.menu %}
+      <div class="sidebar">
+        <ul>
+          {% for menu in page.menu %}
+            <li><a href="#{{ menu[0] }}">{{ menu[1] }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
       <section>
 
         {{ content }}
