@@ -32,6 +32,13 @@
     }
   }
 
+  /* force nav to stay visible on small screens */
+  @media print, screen and (max-width: 480px) {
+    nav {
+        display: block;
+    }
+  }
+
   #unsupported,#not-allowed {
     color: red;
   }
