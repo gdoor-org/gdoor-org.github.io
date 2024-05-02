@@ -1,11 +1,14 @@
 ---
-layout: default
+layout: framework
+title: Buy
+sidebar:
+  - article-menu
 ---
 
-<p align="center">
+<div class="image">
 <img src="./assets/images/doc-3d.png" height="200px"/>
 <img src="./assets/images/doc-esp32.png" height="200px"/>
-</p>
+</div>
 
 # Buying the GDOOR Bus Adapter
 
@@ -33,13 +36,13 @@ You need to:
 - Upload the BoM and CPL files
 - Finish checkout
 
-<p align="center">
+<div class="image">
 <a href="./assets/images/doc-jlcpcb-gerber.png" target="blank"><img src="./assets/images/doc-jlcpcb-gerber.png" height="200px"/></a>
 <a href="./assets/images/doc-jlcpcb-assembly.png" target="blank"><img src="./assets/images/doc-jlcpcb-assembly.png" height="200px"/></a>
-</p>
-<p align="center">
+</div>
+<div class="image">
 <a href="./assets/images/doc-jlcpcb-bom.png" target="blank"><img src="./assets/images/doc-jlcpcb-bom.png" height="200px"/></a>
-</p>
-<p align="center">
+</div>
+<div class="image">
 <a href="./assets/images/doc-jlcpcb-3d.png" target="blank"><img src="./assets/images/doc-jlcpcb-3d.png" height="200px"/></a>
-</p>
+</div>

@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+
+  <link rel="canonical" href="{{ site.url }}">
+  {% comment %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  {% endcomment %}
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  {%- feed_meta -%}
+  {%- include extensions/code-highlight.html -%}
+  {%- include extensions/photo-swipe.html -%}
+  {%- include custom-head.html -%}
+</head>

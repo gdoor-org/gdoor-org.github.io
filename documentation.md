@@ -1,16 +1,13 @@
 ---
-layout: documentation
-menu:
-  started: Getting Started
-  setup: Initial Setup
-  warning: Connection warning
-  usage: Usage with home automation
-  more: Detailed Documentation
+layout: framework
+title: Documentation
+sidebar:
+  - article-menu
 ---
-<p align="center">
-<img src="./assets/images/doc-schematics.png" height="200px"/>
-<img src="./assets/images/doc-pcb.png" height="200px"/>
-</p>
+<div class="image">
+<img src="./assets/images/doc-schematics.png"/>
+<img src="./assets/images/doc-pcb.png"/>
+</div>
 
 # Getting Started
 {: #started}

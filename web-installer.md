@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Web Installer
 ---
 <script
   type="module"
