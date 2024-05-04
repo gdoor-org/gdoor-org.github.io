@@ -20,6 +20,6 @@ The GDOOR hardware adapter supports the following features:
 <div class="actions">
 <div class="button"><a href="https://github.com/gdoor-org/gdoor">Github</a></div>
 <div class="button"><a href="/buy.html">Buy</a></div>
-<div class="button"><a href="/documentation.html">Documentation</a></div>
+<div class="button"><a href="/documentation/getting-started.html">Documentation</a></div>
 <div class="button"><a href="/web-installer.html">Web Installer</a></div>
 </div>

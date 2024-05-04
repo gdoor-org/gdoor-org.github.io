@@ -1,16 +1,16 @@
 ---
-layout: framework
+layout: documentation
 title: Documentation
 sidebar:
   - article-menu
 ---
 <div class="image">
-<img src="./assets/images/doc-schematics.png"/>
-<img src="./assets/images/doc-pcb.png"/>
+<img src="/assets/images/doc-schematics.png"/>
+<img src="/assets/images/doc-pcb.png"/>
 </div>
 
-# Getting Started
-{: #started}
+# Requirements
+{: #requirements}
 You will need the following hardware items to get started:
 
 - ESP32Mini (e.g. [Buy here](https://www.az-delivery.de/en/products/esp32-d1-mini))
@@ -39,20 +39,10 @@ or the dedicated and labeled pins with a good 5V, min. 1A power supply.
 # Connection Warning
 {: #warning }
 <p align="center">
-<img src="./assets/images/doc-pinout.png" height="200px"/>
+<img src="/assets/images/doc-pinout.png" height="200px"/>
 </p>
 
 
 Be careful if you connect an external 5V supply via the dedicated pins,
 ensure correct polarity and voltage levels!
 Do not connect the bus to this input!
-
-# Usage with home automation
-{: #usage }
-You can use [MQTT Explorer](https://mqtt-explorer.com/) to test the connection,
-or visit the [documentation](https://github.com/gdoor-org/gdoor/blob/main/doc/integrations/home-assistant.md) how to set up your home automation system.
-
-# Detailed Documentation
-{: #more }
-Detailed and up-to-date information, including Gira TKS bus protocol,
-hardware adapter details, schematics etc. are in the [Github Repo](https://github.com/gdoor-org/gdoor/)

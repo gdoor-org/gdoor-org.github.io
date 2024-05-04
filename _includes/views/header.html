@@ -33,12 +33,10 @@
           </label>
 
           <div class="trigger">
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-              {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
-              {%- endif -%}
-            {%- endfor -%}
+
+            <a class="page-link" href="/buy.html">BUY</a>
+            <a class="page-link" href="/documentation/getting-started.html">DOCUMENTATION</a>
+            <a class="page-link" href="/web-installer.html">WEB INSTALLER</a>
 
             <a class="page-link" href="https://github.com/gdoor-org/gdoor">
             <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
