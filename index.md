@@ -13,13 +13,13 @@ GDoor is a project to collect and document findings about the Gira TKS Door Syst
 Gira is a german manufacturer of house appliances, including door systems. These systems are connected via a proprietary two wire bus system. 
 
 The GDoor hardware adapter supports the following features:
-- Interfacing the bus messages with your favourite home automation software via MQTT.
+- Interfacing the bus messages with your favorite home automation software via MQTT.
 - Listening to the bus, e.g. to trigger notifications on mobile devices when a door bell button is pressed
 - Sending to the bus, e.g. to open the door
-- Support for HomeAssistent, Openhab and many more.
+- Support for HomeAssistant, openHAB and many more.
 <div class="actions">
-<div class="button"><a href="https://github.com/gdoor-org/gdoor">Github</a></div>
 <div class="button"><a href="/buy.html">Buy</a></div>
 <div class="button"><a href="/documentation/getting-started.html">Documentation</a></div>
 <div class="button"><a href="/web-installer.html">Web Installer</a></div>
+<div class="button"><a href="https://github.com/gdoor-org/gdoor">GitHub</a></div>
 </div>
