@@ -9,18 +9,9 @@ sidebar:
 <img src="/assets/images/doc-pcb.png"/>
 </div>
 
-<<<<<<< HEAD:documentation/getting-started.md
-# Requirements
-{: #requirements}
-You will need the following hardware items to get started:
-
-- ESP32Mini (e.g. [Buy here](https://www.az-delivery.de/en/products/esp32-d1-mini))
-- GDoor hardware adapter PCB. See more details under [Buy](./buy.html).
-=======
 # Getting Started
 {: #started}
 You need the GDOOR hardware adapter + ESP32, see more details under [Buy](./buy.html).
->>>>>>> 345657cba87520748d657b50eee8e28079fc60aa:documentation.md
 
 # Initial Setup
 {: #setup }
