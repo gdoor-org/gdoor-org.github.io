@@ -41,16 +41,3 @@ or the dedicated and labeled pins with a good 5V, min. 1A power supply.
 Be careful if you connect an external 5V supply via the dedicated pins,
 ensure correct polarity and voltage levels!
 Do not connect the bus to this input!
-<<<<<<< HEAD:documentation/getting-started.md
-=======
-
-# Usage with home automation
-{: #usage }
-You can use [MQTT Explorer](https://mqtt-explorer.com/) to test the connection,
-or visit the [documentation](https://github.com/gdoor-org/gdoor/blob/main/doc/integrations/home-assistant.md) how to set up your home automation system.
-
-# Detailed Documentation
-{: #more }
-Detailed and up-to-date information, including Gira TKS bus protocol,
-hardware adapter details, schematics etc. are in the [GitHub Repo](https://github.com/gdoor-org/gdoor/)
->>>>>>> 345657cba87520748d657b50eee8e28079fc60aa:documentation.md
