@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: framework
 ---
 <p align="center">
 <a href="./assets/images/hardware.png" target="blank"><img src="./assets/images/hardware.png" width="200px"/></a>
