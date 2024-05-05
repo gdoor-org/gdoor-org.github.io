@@ -12,7 +12,7 @@ The following allows you to e.g.
 - trigger notifications on mobile devices when a door bell button is pressed
 - use any actions sent on the Gira bus to trigger automations
 
-## Connect to Gdoor
+# Connect to Gdoor
 
 There are two possibilities:
 
@@ -50,7 +50,7 @@ There are two possibilities:
 Work in progress
 
 
-## Examples for typical use cases
+# Examples for typical use cases
 
 ### Open door via Home Assistant dashboard
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: framework
 title: Web Installer
 ---
 <script
@@ -8,8 +8,8 @@ title: Web Installer
 ></script>
 
 # Web Installer
-Welcome to the GDOOR Web Installer, used to program the latest GDOOR firmware
-on your GDOOR hardware adapter. Please read the [documentation](./documentation.html) first
+Welcome to the GDoor Web Installer, used to program the latest GDoor firmware
+on your GDoor hardware adapter. Please read the [documentation](./documentation.html) first
 for hardware requirements needed before flashing the firmware.
 
 <esp-web-install-button

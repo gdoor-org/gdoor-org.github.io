@@ -6,13 +6,13 @@ layout: default
 </p>
 
 <div class="banner">
-<h3>The GDOOR hardware adapter allows the integration of a Gira TKS door bell system into a smart home.</h3>
+<h3>The GDoor hardware adapter allows the integration of a Gira TKS door bell system into a smart home.</h3>
 </div>
 
-GDOOR is a project to collect and document findings about the Gira TKS Door System, all figured out by reverse engineering.
+GDoor is a project to collect and document findings about the Gira TKS Door System, all figured out by reverse engineering.
 Gira is a german manufacturer of house appliances, including door systems. These systems are connected via a proprietary two wire bus system. 
 
-The GDOOR hardware adapter supports the following features:
+The GDoor hardware adapter supports the following features:
 - Interfacing the bus messages with your favourite home automation software via MQTT.
 - Listening to the bus, e.g. to trigger notifications on mobile devices when a door bell button is pressed
 - Sending to the bus, e.g. to open the door

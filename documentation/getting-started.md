@@ -14,16 +14,16 @@ sidebar:
 You will need the following hardware items to get started:
 
 - ESP32Mini (e.g. [Buy here](https://www.az-delivery.de/en/products/esp32-d1-mini))
-- GDOOR hardware adapter PCB. See more details under [Buy](./buy.html).
+- GDoor hardware adapter PCB. See more details under [Buy](./buy.html).
 
 # Initial Setup
 {: #setup }
-With the fully build GDOOR hardware you can get started to connect it to the bus:
+With the fully build GDoor hardware you can get started to connect it to the bus:
 
 1. Connect the adapter via USB to your PC.
-2. Flash the GDOOR adapter firmware.
+2. Flash the GDoor adapter firmware.
 You can use our web-programmer tool: [Web Installer](./web-installer.html)
-3. After the firmware is flashed, the adapter will create a WiFi called `GDOOR`.
+3. After the firmware is flashed, the adapter will create a WiFi called `GDoor`.
 4. Connect to it with the password `12345678`
 5. Once connected, you can surf to [192.168.4.1](http://192.168.4.1)
 and setup the connection to your home WiFi and all needed MQTT settings like:
