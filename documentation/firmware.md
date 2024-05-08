@@ -15,13 +15,13 @@ The following serial commands can be send to the bus adapter:
 
 # Receive bus events/commands
 On each bus communication you will receive a JSON formatted string with the following fields:
-- action: The action of the bus message like e.g. `DOOR_OPEN`. For details please look into [gdoor_data.cpp](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
-- type: The hardware type of the message sender. For details please look into [gdoor_data.cpp](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
-- source: Bus address of message sender, 3 Bytes.
-- destination: Bus address of message destination, 3 Bytes. This field is not contained in each bus message in such cases it is set to 0.
-- parameters: Parameter values depend on action and bus structure. E.g. it can be the ID of which button was pressed, 2 Bytes.
-- busdata: Bus data as hex value. You can send this value back to the serial port to duplicate a bus message.
-- event_id: Counter value. It counts up for each new bus message.
+- `action`: The action of the bus message like e.g. `DOOR_OPEN`. For details please look into [gdoor_data.cpp](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
+- `type`: The hardware type of the message sender. For details please look into [gdoor_data.cpp](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
+- `source`: Bus address of message sender, 3 Bytes.
+- `destination`: Bus address of message destination, 3 Bytes. This field is not contained in each bus message in such cases it is set to 0.
+- `parameters`: Parameter values depend on action and bus structure. E.g. it can be the ID of which button was pressed, 2 Bytes.
+- `busdata`: Bus data as hex value. You can send this value back to the serial port to duplicate a bus message.
+- `event_id`: Counter value. It counts up for each new bus message.
 
 If you switch on debug mode, you will also receive:
 - raw: The raw counting values of each high/low bit. Array of bytes where each byte represents the number of pulses of a individual bit.

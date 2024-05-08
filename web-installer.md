@@ -9,7 +9,7 @@ title: Web Installer
 
 # Web Installer
 Welcome to the GDoor Web Installer, used to program the latest GDoor firmware
-on your GDoor hardware adapter. Please read the [documentation](./documentation.html) first
+on your GDoor hardware adapter. Please read the [documentation](/documentation/getting-started.html) first
 for hardware requirements needed before flashing the firmware.
 
 <esp-web-install-button
