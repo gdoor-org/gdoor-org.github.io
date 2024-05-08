@@ -13,6 +13,14 @@ sidebar:
 {: #started}
 You need the GDOOR hardware adapter + ESP32, see more details under [Buy](./buy.html).
 
+The adapter was successfully tested with
+- Gira Türkommunikations-System Steuergerät Audio (1287 00)
+- Gira Türkommunikations-System Steuergerät Video (1288 00)
+- Gira Wohnungsstation AP (1250 015)
+- Gira Wohnungsstation Video AP Plus (1239 03)
+- Gira Türstation AP 1-fach (1266 65/66/67)
+- Gira Türstation AP 3-fach (1267 65/66/67)
+
 # Initial Setup
 {: #setup }
 With the fully build GDoor hardware you can get started to connect it to the bus:
