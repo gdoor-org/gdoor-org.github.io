@@ -50,7 +50,7 @@ Thing mqtt:topic:gdoor "GDoor" (mqtt:broker:myInsecureBroker) [availabilityTopic
     Type string : door_message "Message" [ commandTopic="/gdoor/bus_tx",  stateTopic="/gdoor/bus_rx"]
     Type string : door_action "Action" [ stateTopic="/gdoor/bus_rx", transformationPattern="JSONPATH:$.action"]
 }
-
+```
 
 
 
