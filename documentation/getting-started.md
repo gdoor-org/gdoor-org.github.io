@@ -24,9 +24,14 @@ The adapter was successfully tested with
 # Building the Adapter
 After you procured an GDoor adapter ([Buy](/buy.html)) you need to:
 1. Solder the ESP32mini pin headers into the ESP32 mini
-2. Plug the ESP32mini into the GDoor adapter,
-please be aware of the orientation! The USB port of the ESP32mini needs to point
-to the side with the bus connector.
+2. Plug the ESP32mini into the GDoor adapter.
+
+> #### Warning:
+>
+> Be aware of the orientation! The USB port of the ESP32mini needs to point
+> to the side with the bus connector.
+{: .block-tip }
+
 
 # Initial Setup
 {: #setup }
