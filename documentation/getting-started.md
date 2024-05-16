@@ -22,7 +22,7 @@ The adapter was successfully tested with
 - Gira Türstation AP 3-fach (1267 65/66/67)
 
 # Building the Adapter
-After you procured an GDoor adapter ([Buy](/buy.html) you need to:
+After you procured an GDoor adapter ([Buy](/buy.html)) you need to:
 1. Solder the ESP32mini pin headers into the ESP32 mini
 2. Plug the ESP32mini into the GDoor adapter,
 please be aware of the orientation! The USB port of the ESP32mini needs to point
