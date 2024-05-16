@@ -21,12 +21,19 @@ The adapter was successfully tested with
 - Gira Türstation AP 1-fach (1266 65/66/67)
 - Gira Türstation AP 3-fach (1267 65/66/67)
 
+# Building the Adapter
+After you procured an GDoor adapter ([Buy](/buy.html) you need to:
+1. Solder the ESP32mini pin headers into the ESP32 mini
+2. Plug the ESP32mini into the GDoor adapter,
+please be aware of the orientation! The USB port of the ESP32mini needs to point
+to the side with the bus connector.
+
 # Initial Setup
 {: #setup }
 With the fully build GDoor hardware you can get started to connect it to the bus:
 
 1. Connect the adapter via USB to your PC.
-2. Flash the GDOOR adapter firmware via our [Web Installer](./web-installer.html)
+2. Flash the GDoor adapter firmware via our [Web Installer](./web-installer.html)
 3. After the firmware is flashed, the adapter will create a WiFi called `GDOOR`.
 4. Connect to it with the password `12345678`
 5. Once connected, you can surf to [192.168.4.1](http://192.168.4.1)

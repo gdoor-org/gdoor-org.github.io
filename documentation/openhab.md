@@ -35,16 +35,22 @@ In the following example you need to change the following values:
 - `gdoor/bus_rx` (stateTopic): Set it to the value you used during initial configuration.
 - `011011A286FD0360A04A` (formatBeforePublish): Set it to the `busdata` value you received for a door opener action.
 - `0360` (on): The `parameter` field of the door bell action.
+- `availabilityTopic=homeassistant/sensor/gdoor/data/config/08_B6_1F_35_1E_80`: Is optional, you can find it via the MQTT autodiscovery,
+   used to indicate if the adapter is online or offline
 
+For .things file:
 ```
 Bridge mqtt:broker:myInsecureBroker [ host="192.168.0.42", secure=false ]
 
-Thing mqtt:topic:gdoor "GDoor" (mqtt:broker:myInsecureBroker) {
+Thing mqtt:topic:gdoor "GDoor" (mqtt:broker:myInsecureBroker) [availabilityTopic="homeassistant/sensor/gdoor/data/config/08_B6_1F_35_1E_80", payloadAvailable="online", payloadNotAvailable="offline"] {
     Channels:
-    Type switch : door_opener "Open Door" [ commandTopic="gdoor/bus_tx", formatBeforePublish="011011A286FD0360A04A"]
-    Type contact : door_bell "Door Bell" [ stateTopic="gdoor/bus_rx", transformationPattern="JSONPATH:$.parameters", on="0360" ]
-    Type string : door_bus "Doorbus Message" [ commandTopic="gdoor/bus_tx",  stateTopic="gdoor/bus_rx", transformationPattern="JSONPATH:$.busdata"]
+    Type switch : door_opener "Open Door" [ commandTopic="/gdoor/bus_tx", formatBeforePublish="011011A286FD0360A04A"]
+    Type switch : door_bell "Door Bell" [ stateTopic="/gdoor/bus_rx", transformationPattern="JSONPATH:$.parameters", on="0360", off="0000" ]
+    Type string : door_bus "Doorbus Message" [ commandTopic="/gdoor/bus_tx",  stateTopic="/gdoor/bus_rx", transformationPattern="JSONPATH:$.busdata"]
+    Type string : door_message "Message" [ commandTopic="/gdoor/bus_tx",  stateTopic="/gdoor/bus_rx"]
+    Type string : door_action "Action" [ stateTopic="/gdoor/bus_rx", transformationPattern="JSONPATH:$.action"]
 }
 
-```
+
+
 
