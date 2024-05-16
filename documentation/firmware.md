@@ -24,8 +24,8 @@ On each bus communication you will receive a JSON formatted string with the foll
 - `event_id`: Counter value. It counts up for each new bus message.
 
 If you switch on debug mode, you will also receive:
-- raw: The raw counting values of each high/low bit. Array of bytes where each byte represents the number of pulses of a individual bit.
-- valid: 1 if checksum and parity bits passed the check.
+- `raw`: The raw counting values of each high/low bit. Array of bytes where each byte represents the number of pulses of a individual bit.
+- `valid`: 1 if checksum and parity bits passed the check.
 
 # Send bus events/commands
 If you want to send to the bus, just send:
