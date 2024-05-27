@@ -13,7 +13,7 @@ on your GDoor hardware adapter. Please read the [documentation](/documentation/g
 for hardware requirements needed before flashing the firmware.
 
 <esp-web-install-button
-  manifest="https://raw.githubusercontent.com/gdoor-org/gdoor/main/firmware/esp32/gdoor/manifest.json"
+  manifest="assets/firmware/manifest.json"
 >
 <button class="button" slot="activate">Start Firmware Installation</button>
 <span id="unsupported" slot="unsupported">Error: Your browser does not support WebUSB. Please use either Chrome or Edge Browser.</span>
