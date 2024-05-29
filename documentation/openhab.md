@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Openhab
+title: openHAB
 sidebar:
   - article-menu
 ---
@@ -8,12 +8,12 @@ sidebar:
 # Integrate your Gira door system
 
 The following allows you to e.g.
-- open the door via Openhab
+- open the door via openHAB
 - trigger notifications on mobile devices when a door bell button is pressed
 - use any actions sent on the Gira bus to trigger automations
 
 # Connect to Gdoor
-Use the  [MQTT Binding](https://www.openhab.org/addons/bindings/mqtt.generic/) and the `JSONPath Transformation` to connect OpenHab to GDoor via MQTT.
+Use the  [MQTT Binding](https://www.openHAB.org/addons/bindings/mqtt.generic/) and the [JSONPath](https://www.openhab.org/addons/transformations/jsonpath/) transformation to connect openHAB to GDoor via MQTT.
 
 # Get needed parameters
 ### Open your door

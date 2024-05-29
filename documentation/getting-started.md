@@ -47,9 +47,14 @@ and setup the connection to your home WiFi and all needed MQTT settings like:
 - MQTT Username & Password (both optional)
 - MQTT topic where door bus data is send to
 - MQTT topic, to which the adapter subscribes and sends received data onto the bus
+- RX Pin: Leave it default, useful if you still have an old v3.0 adapter.
+- RX Sensitivity: If you do not receive all messages you can increase the sensitivity,
+  if you receive false bus message you can decrease it.
+- Debug: If you enable debug mode, more output will be send via the USB serial port.
+  Also bus messages which do not pass the checksum validation, will be published via MQTT.
 6. After successfully setting up the adapter, you can connect it to the Gira TKS Bus.
 The bus polarity does not matter as the bus adapter automatically connects the right way.
-7. You can disconnect your computer via USB, but the adapter needs to be powered by either the USB bus,
+7. You can disconnect your computer via USB, but the adapter needs to be powered by *either* the USB bus,
 or the dedicated and labeled pins with a good 5V, min. 1A power supply.
 
 # Connection Warning
