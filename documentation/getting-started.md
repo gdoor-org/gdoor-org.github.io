@@ -32,6 +32,9 @@ After you procured an GDoor adapter ([Buy](/buy.html)) you need to:
 > to the side with the bus connector.
 {: .block-tip }
 
+<p align="center">
+<a href="/assets/images/hw3.1/resize-DSC_1440.jpg" target="blank"><img src="/assets/images/hw3.1/thumb-DSC_1440.jpg" width="200px"/></a>
+</p>
 
 # Initial Setup
 {: #setup }

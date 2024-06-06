@@ -6,7 +6,7 @@ sidebar:
 ---
 
 <div class="image">
-<img src="./assets/images/doc-3d.png" height="200px"/>
+<img src="./assets/images/hw3.1/thumb-DSC_1442.jpg" height="200px"/>
 <img src="./assets/images/doc-esp32.png" height="200px"/>
 </div>
 

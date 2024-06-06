@@ -2,7 +2,7 @@
 layout: framework
 ---
 <p align="center">
-<a href="./assets/images/hardware.png" target="blank"><img src="./assets/images/hardware.png" width="200px"/></a>
+<a href="./assets/images/hw3.1/resize-DSC_1441.jpg" target="blank"><img src="./assets/images/hw3.1/thumb-DSC_1441.jpg" width="200px"/></a>
 </p>
 
 <div class="banner">
