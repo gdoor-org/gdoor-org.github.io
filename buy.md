@@ -17,7 +17,7 @@ We do not directly sell the hardware adapter,
 but we tried to make it very easy to procure one yourself, fully assembled.
 
 
-Production costs for the GDOOR bus adapter, incl. shipping and taxes, are ~40-50€ for 5 adapters (Minimum Order Quantity).
+Production costs for the GDoor bus adapter, incl. shipping and taxes, are ~40-50€ for 5 adapters (Minimum Order Quantity).
 Additionally you need an ESP32 (~10€, e.g. [buy here](https://www.az-delivery.de/en/products/esp32-d1-mini)).
 
 You have three possibilities:
