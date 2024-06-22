@@ -1,1 +1,1 @@
-{"name": "GDoor", "version": "v3.1.1+c6161cc", "new_install_prompt_erase": true, "new_install_improv_wait_time": 0, "builds": [{"chipFamily": "ESP32", "parts": [{"path": "firmware_merged.bin", "offset": 0}]}]}
+{"name": "GDoor", "version": "v3.1.1+cbd1304", "new_install_prompt_erase": true, "new_install_improv_wait_time": 0, "builds": [{"chipFamily": "ESP32", "parts": [{"path": "firmware_merged.bin", "offset": 0}]}]}
