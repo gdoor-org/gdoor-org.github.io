@@ -1,1 +1,1 @@
-{"name": "GDoor", "version": "main+a8b8320", "new_install_prompt_erase": false, "new_install_improv_wait_time": 0, "builds": [{"chipFamily": "ESP32", "parts": [{"path": "firmware_merged.bin", "offset": 0}]}]}
+{"name": "GDoor", "version": "main+5b6d483", "new_install_prompt_erase": true, "new_install_improv_wait_time": 0, "builds": [{"chipFamily": "ESP32", "parts": [{"path": "firmware_merged.bin", "offset": 0}]}]}
