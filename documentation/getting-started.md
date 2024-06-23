@@ -44,8 +44,8 @@ With the fully build GDoor hardware you can get started to connect it to the bus
 2. Flash the GDoor adapter firmware via our [Web Installer](./web-installer.html)
 3. After the firmware is flashed, the adapter will create a WiFi called `GDoor`.
 4. Connect to it with the password `12345678`
-5. Once connected, you can surf to [192.168.4.1](http://192.168.4.1)
-and setup the connection to your home WiFi and all needed MQTT settings like:
+5. Once connected, either a captive portal appears or if not, surf to [192.168.4.1](http://192.168.4.1)
+to setup the connection to your home WiFi and all needed MQTT settings like:
 - MQTT Broker Network Address
 - MQTT Username & Password (both optional)
 - MQTT topic where door bus data is send to

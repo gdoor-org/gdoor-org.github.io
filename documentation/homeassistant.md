@@ -12,9 +12,29 @@ The following allows you to e.g.
 - trigger notifications on mobile devices when a door bell button is pressed
 - use any actions sent on the Gira bus to trigger automations
 
-# Connect to Gdoor
+# Connect Home Assistant to GDoor
 
 There are two possibilities:
+
+### MQTT (recommended)
+
+(Work in progress)
+
+GDoor supports Home Assistant MQTT Auto-Discovery.
+
+1. install [Home Assistant Add-on: Mosquitto broker](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md) and MQTT integration
+2. create user to be used for MQTT
+3. open GDoor web interface and set MQTT host to the IP of your Home Assistant installation as well as MQTT user name and password.
+4. now the `GDoor Adapter` device should appear in Home Assistant
+5. press the door bell
+6. press the "open door" button on your indoor station
+7. open Logbook and search for "GDoor", now you should see state changes like
+   ```
+   GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
+   ```
+   Note the value of the `parameters` field: this is the unique value of your door bell which you can use to identify your door bell in automations.
+
+
 
 ### USB / Serial connection
 
@@ -24,7 +44,7 @@ There are two possibilities:
     ```
     sensors:
       - platform: serial
-        name: "Gdoor"
+        name: "GDoor"
         serial_port: /dev/ttyUSB0 # change device if needed
         baudrate: 115200
     ```
@@ -32,9 +52,9 @@ There are two possibilities:
 3. restart Home Assistant
 4. press the door bell
 5. press the "open door" button on your indoor station
-6. open Logbook and search for "Gdoor", now you should see state changes like
+6. open Logbook and search for "GDoor", now you should see state changes like
    ```
-   Gdoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
+   GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
    ```
    Note the value of the `parameters` field: this is the unique value of your door bell which you can use to identify your door bell in automations.
 7. look for the `DOOR_OPEN` action, copy the value of `busdata` and add the following shell command in `configuration.yaml` to be able to open the door programmatically. Replace `<busdata>` with the copied value.
@@ -44,10 +64,6 @@ There are two possibilities:
     ```
 8. restart Home Assistant
 
-
-### MQTT
-
-Work in progress
 
 
 # Examples for typical use cases
