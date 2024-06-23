@@ -22,9 +22,11 @@ for hardware requirements and how to proceed after flashing it.
 <span id="not-allowed" slot="not-allowed">Error: The Web Installer was not granted permission to access USB.</span>
 </esp-web-install-button>
 
+
+
 ## Firmware Updates
 
-For updating the firmware of your running GDoor adapter, please use the update functionality provided by the GDoor adapter web interface.
+For updating the firmware of your running GDoor adapter, please use the update functionality provided by the GDoor adapter web interface:
 
 1. open [GDoor adapter web interface](http://GDoor/) (in case the link doesn't work, please lookup adapter IP address in your router)
 2. click "Update"
