@@ -24,11 +24,12 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
 
 1. install [Home Assistant Add-on: Mosquitto broker](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md) and MQTT integration
 2. create user to be used for MQTT
-3. open [GDoor adapter web interface](http://GDoor/) (in case the link doesn't work, please lookup adapter IP address in your router) and set MQTT host to the IP of your Home Assistant installation as well as the created MQTT user name and password.
-4. now the `GDoor Adapter` device should appear in Home Assistant
-5. press the door bell
-6. press the "open door" button on your indoor station
-7. open Logbook and search for "GDoor", now you should see state changes like
+3. open [GDoor adapter web interface](http://GDoor/) (in case the link doesn't work, please lookup adapter IP address in your router)
+4. set MQTT host to the IP of your Home Assistant installation as well as the created MQTT user name and password.
+5. now the `GDoor Adapter` device should appear in Home Assistant
+6. press the door bell
+7. press the "open door" button on your indoor station
+8. open Logbook and search for "GDoor", now you should see state changes like
    ```
    GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
    ```
