@@ -23,6 +23,7 @@ for hardware requirements and how to proceed after flashing it.
 </esp-web-install-button>
 
 
+<br><br>
 
 ## Firmware Updates
 

@@ -24,7 +24,7 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
 
 1. install [Home Assistant Add-on: Mosquitto broker](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md) and MQTT integration
 2. create user to be used for MQTT
-3. open GDoor web interface and set MQTT host to the IP of your Home Assistant installation as well as MQTT user name and password.
+3. open [GDoor adapter web interface](http://GDoor/) (in case the link doesn't work, please lookup adapter IP address in your router) and set MQTT host to the IP of your Home Assistant installation as well as the created MQTT user name and password.
 4. now the `GDoor Adapter` device should appear in Home Assistant
 5. press the door bell
 6. press the "open door" button on your indoor station
