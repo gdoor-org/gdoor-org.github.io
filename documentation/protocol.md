@@ -22,6 +22,13 @@ each participating bus device decides on its own to:
 The outdoor station can be commanded to send audio/video to the bus, the indoor stations
 will send audio only if a user pressed the "call accept" button.
 
+On the bus, the following elements are transmitted and received:
+- Digital Signaling: Control Signals like Door Opener, Lights etc (see `Digital Signaling` below).
+- Audio: Audio is transferred as analog audio, directly coupled to the bus.
+  More details are in the [Audio Github issue](https://github.com/gdoor-org/gdoor/issues/20).
+- Video: Video is FM modulated at ~11MHz. It is composite video, PAL, 625, 25 FPS  worked to decode it.
+  More details are in the [Video Github issue](https://github.com/gdoor-org/gdoor/issues/21).
+
 # Digital Signaling
 ![Example of Bus voltage](/assets/images/busvoltage.png)
 
