@@ -1,14 +1,1 @@
-{
-    "name": "GDoor",
-    "version": "v3.1.0 (f1b7ccf)",
-    "new_install_prompt_erase": false,
-    "new_install_improv_wait_time": 0,
-    "builds": [
-      {
-        "chipFamily": "ESP32",
-        "parts": [
-          { "path": "firmware-esp32mini-f1b7ccf.bin", "offset": 0 }
-        ]
-      }
-    ]
-  }
+{"name": "GDoor", "version": "v3.1.1+7cfaf1a", "new_install_prompt_erase": true, "new_install_improv_wait_time": 0, "builds": [{"chipFamily": "ESP32", "parts": [{"path": "firmware_merged.bin", "offset": 0}]}]}
