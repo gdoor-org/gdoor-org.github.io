@@ -71,3 +71,30 @@ or the dedicated and labeled pins with a good 5V, min. 1A power supply.
 Be careful if you connect an external 5V supply via the dedicated pins,
 ensure correct polarity and voltage levels!
 Do not connect the bus to this input!
+
+In principle the bus adapter should not pose any risk, yet there are caveats as in reality it is hard to catch all possible variants of bus installations
+and houses:
+
+- The Gira bus itself is short circuit proof.
+
+For the GDoor adapter:
+- The GDoor bus adapter uses a diode bridge, so  bus polarity does not matter.
+- The interfaces to the bus are AC coupled, so no risk to send a wrong voltage level to the bus.
+- Yet it has a certain RX and TX capacitance, by principle, as any other Gira device. 
+ These should be negligible.
+- If your ESP would go wild an send all the time, it could theoretically disturb the bus for all, but not damage it.
+
+There is one connection which may be tricky: The power supply of the GDoor bus adapter:
+The bus adapter connects the Ground of the power supply to the ground of the bus.
+This should pose no problem ("connect 0V to 0V"), but as a developer we can not know how your Gira installation is done.
+Even Gira itself warns about this, as this also may happen in regular installations with their own devices.
+e.g. https://partner.gira.de/service/faq/antwort.html?id=1254
+Violating this should not impose any damage but may disturb the bus and render it unstable.
+
+The safest method to avoid all of above points, without detailed knowledge, is to:
+1. Use a isolating 5V supply e.g. MeanWell HDR-15-5, or a USB power supply without earth connection (most of them).
+Do not use a computer or similar to power the GDoor adapter.
+2. Do not connect to the USB with your computer while the GDoor adapter is connected to the Gira bus.
+Only use Wifi.
+
+Please remember this is an open source project with no guarantee. If in doubt you may want to contact a friend/colleague or similar with electrical or electronic background and ask for help on your specific installation.
