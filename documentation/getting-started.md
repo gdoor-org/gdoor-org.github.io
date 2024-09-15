@@ -82,7 +82,7 @@ For the GDoor adapter:
 - The interfaces to the bus are AC coupled, so no risk to send a wrong voltage level to the bus.
 - Yet it has a certain RX and TX capacitance, by principle, as any other Gira device. 
  These should be negligible.
-- If your ESP would go wild an send all the time, it could theoretically disturb the bus for all, but not damage it.
+- If your ESP would go wild and send all the time, it could theoretically disturb the bus for all, but not damage it.
 
 There is one connection which may be tricky: The power supply of the GDoor bus adapter:
 The bus adapter connects the Ground of the power supply to the ground of the bus.
