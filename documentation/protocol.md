@@ -78,23 +78,23 @@ to the bus and observing device behavior:
 
 | Byte-Value    | Description   |
 | ------------- | ------------- |
-| 0x00          | Programming mode - Stop|
-| 0x01          | Programming mode - Start|
-| 0x02          | Door opener programming - Stop|
-| 0x03          | Door opener programming - Start|
-| 0x04          | Learn doorbell button|
-| 0x05          | Confirm learned doorbell button|
-| 0x08          | Reset device configuration (announcement by device itself)|
-| 0x0F          | Confirm learned door opener|
-| 0x11          | Door bell button pressed - which button is specified in ?Param?|
-| 0x12          | Internal call from one to another indoor station - which station is specified in ?Param?|
-| 0x13          | Floor bell button pressed|
-| 0x20          | End audio/video transmission|
-| 0x21          | Request audio|
-| 0x28          | Request video|
-| 0x31          | Open door|
-| 0x41          | Light button pressed|
-| 0x42          | Generic button pressed - which button is specified in ?Param?|
+| 0x00          | Programming mode - Stop (`CTRL_PROGRAMMING_STOP`)|
+| 0x01          | Programming mode - Start (`CTRL_PROGRAMMING_START`)|
+| 0x02          | Door opener programming - Stop (`CTRL_DOOROPENER_TRAINING_STOP`)|
+| 0x03          | Door opener programming - Start (`CTRL_DOOROPENER_TRAINING_START`)|
+| 0x04          | Learn doorbell button (`CTRL_BUTTONS_TRAINING_START`)|
+| 0x05          | Confirm learned doorbell button (`CTRL_DOORSTATION_ACK`)|
+| 0x08          | Reset device configuration (announcement by device itself) (`CTRL_RESET`)|
+| 0x0F          | Confirm learned door opener (`CTRL_DOOROPENER_ACK`)|
+| 0x11          | Door bell button pressed - which button is specified in ?Param? (`BUTTON_RING`)|
+| 0x12          | Internal call from one to another indoor station - which station is specified in ?Param? (`CALL_INTERNAL`)|
+| 0x13          | Floor bell button pressed (`BUTTON_FLOOR`)|
+| 0x20          | End audio/video transmission (`AUDIO_VIDEO_END`)|
+| 0x21          | Request audio (`AUDIO_REQUEST`)|
+| 0x28          | Request video (`VIDEO_REQUEST`)|
+| 0x31          | Open door (`DOOR_OPEN`)|
+| 0x41          | Light button pressed (`BUTTON_LIGHT`)|
+| 0x42          | Generic button pressed - which button is specified in ?Param? (`BUTTON`)|
 
 see [mapping of actions in the firmware source code](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
 
@@ -103,15 +103,52 @@ see [mapping of actions in the firmware source code](https://github.com/gdoor-or
 
 ### Parameter
 2 Bytes with parameters for the Action field.
-E.g. a door station with multiple buttons encodes the pressed key number
+E.g. a door station with multiple buttons encodes the pressed key number.
+
+#### 1. Action = BUTTON_RING (0x11), BUTTON_LIGHT (0x41), DOOR_OPEN (0x31)
+- First Byte: Most likely button number (and maybe attachment number, see
+[Issue 33](https://github.com/gdoor-org/gdoor/issues/33)).
+- Second Byte: 0x60 for normal press, 0xA0 for long press (indicates something in bit 8 and bit 7).
+
+#### 2. Action = CALL_INTERNAL (0x12)
+- First Byte:  Unconfirmed - Most likely button number (and maybe attachment number, see
+[Issue 33](https://github.com/gdoor-org/gdoor/issues/33)).
+- Second Byte: Unconfirmed - 0x60 for normal press.
+
+#### 3. Action = BUTTON (0x42)
+- First Byte: Always bit 7 seems to be set (0x40), lower bits seem to indicate button number (1,2,3...).
+- Second Byte: 0x40 for ON, 0x50 for OFF.
+
+#### 4. Action = VIDEO_REQUEST (0x28)
+- First Byte:
+  - 0x00: Disable Camera, if second byte = 0
+  - 0x02: Enable Camera, with outdoor camera light
+  - 0x03: Enable Camera, without camera light
+- Second Byte: Video Frequency. If frequency is 0 and first byte is 0x01, the Video is turned off.
+
+#### 5. Action = CTRL_DOOROPENER_TRAINING_START (0x03)
+- First Byte:
+  - 0x00: Start training of door opener
+  - 0x01: Send by switching actuator (1289 00), when switched to mode "door opener"
+  - 0x02: Send by switching actuator (1289 00), when switched to mode "impulse"
+  - 0x04: Send by switching actuator (1289 00), when switched to mode "timer/min"
+  - 0x08: Send by switching actuator (1289 00), when switched to mode "timer/sec"
+  - 0x10: Send by switching actuator (1289 00), when switched to mode "switch"
+- Second Byte: Currently unkown
 
 ### Type
 
 | Byte-Value    | Description   |
 | ------------- | ------------- |
-| 0xA0          | Door station |
-| 0xA1          | Indoor station|
-| 0xA3          | Controller|
+| 0xA0          | Door station (`OUTDOOR`)|
+| 0xA1          | Indoor station (`INDOOR`)|
+| 0xA2          | Indoor headset (`INDOOR_RECEIVER`)|
+| 0xA3          | Controller (`CONTROLLER`)|
+| 0xA4          | TKS switching actuator (`ACTUATOR`)|
+| 0xA5          | TKS TK Gateway (Analog phone) (`GATEWAY_TK`)|
+| 0xA6          | TKS Chime (`CHIME`)|
+| 0xA7          | TKS Button Interface (`BUTTON_IF`)|
+| 0xA8          | TKS IP Gateway (`GATEWAY_IP`)|
 
 ### Destination
 3 Byte of device address
