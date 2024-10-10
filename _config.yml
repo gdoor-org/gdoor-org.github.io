@@ -28,10 +28,10 @@ twitter_username: GDOOR
 github_username:  GDOOR
 
 # Build settings
-theme: minima
+theme: jekyll-theme-yat
 remote_theme: jeffreytse/jekyll-theme-yat
 plugins:
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
+#  - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-feed
 
 # Exclude from processing.

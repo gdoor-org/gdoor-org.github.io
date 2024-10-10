@@ -51,7 +51,6 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 @if $selection-background-color == "" {
   $selection-background-color: rgba(invert($brand-color), 0.3);
 }
-
 @import "custom.scss";
 
 @import "yat";
