@@ -116,7 +116,7 @@ $dark-background-color: #282828 !default;
         padding-top: 4px;
         padding-bottom: 4px;
         border-radius: 4px;
-        color: 0.7*$brand-color;
+        color: colorArithmetic(0.7, $brand-color);
         font-weight: bold;
       }
   }
