@@ -40,7 +40,7 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
 ### USB / Serial connection
 
 1. connect the Gdoor adapter to a USB port of the machine where Home Assistant is running
-2. in `configuration.yaml`, add
+2. edit `configuration.yaml` (e.g. via the [Home Assistant Add-on: Studio Code Server](https://github.com/hassio-addons/addon-vscode)) and add
 
     ```
     sensors:
@@ -71,7 +71,7 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
 
 ### Open door via Home Assistant dashboard
 
-Simply call the above defined service `shell_command.open_house_door` in e.g. a button card:
+Simply call the above defined service `shell_command.gdoor_open_door` in e.g. a button card:
 
 ```
 show_name: true
@@ -79,7 +79,7 @@ show_icon: true
 type: button
 tap_action:
   action: call-service
-  service: shell_command.open_house_door
+  service: shell_command.gdoor_open_door
 name: Haustür öffnen
 icon: mdi:door-open
 ```
