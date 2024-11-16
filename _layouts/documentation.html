@@ -8,6 +8,7 @@ layout: default
         <section class="linkbar">
           <ul>
             {%- if page.url == "/documentation/getting-started.html" -%} <li class="menuactive">{%- else -%} <li> {%- endif -%}<a href="/documentation/getting-started.html">Getting Started</a></li>
+            {%- if page.url == "/documentation/audio.html" -%} <li class="menuactive">{%- else -%} <li> {%- endif -%}<a href="/documentation/audio.html">Audio / VOIP</a></li>
             {%- if page.url == "/documentation/homeassistant.html" -%} <li class="menuactive">{%- else -%} <li> {%- endif -%}<a href="/documentation/homeassistant.html">Home Assistant</a></li>
             {%- if page.url == "/documentation/openhab.html" -%} <li class="menuactive">{%- else -%} <li> {%- endif -%}<a href="/documentation/openhab.html">openHAB</a></li>
             {%- if page.url == "/documentation/firmware.html" -%} <li class="menuactive">{%- else -%} <li> {%- endif -%}<a href="/documentation/firmware.html">Firmware</a></li>
