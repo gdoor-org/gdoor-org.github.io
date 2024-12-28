@@ -100,6 +100,7 @@ tap_action:
 
 Example automation:
 
+{% raw %}
 ```
 alias: Türklingel
 triggers:
@@ -133,6 +134,7 @@ action:
               message: Türklingel (innen)
 mode: single
 ```
+{% endraw %}
 
 
 For USB / serial connection, adjust `triggers` to
