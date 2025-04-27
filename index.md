@@ -15,7 +15,7 @@ Gira is a german manufacturer of house appliances, including door systems. These
 The GDoor hardware adapter supports the following features:
 - (In development) Connect the bus audio via VOIP.
 - Interfacing the bus messages with your favorite home automation software via MQTT.
-- Listening to the bus, e.g. to trigger notifications on mobile devices when a door bell button is pressed
+- Listening to the bus, e.g. to trigger notifications on mobile devices when a door bell button is pressed or a key card is recognized by a transponder reader
 - Sending to the bus, e.g. to open the door
 - Support for HomeAssistant, openHAB and many more.
 <div class="actions">
