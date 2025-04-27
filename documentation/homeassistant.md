@@ -27,11 +27,11 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
 5. now the `GDoor Adapter` device should appear in Home Assistant
 6. press the door bell
 7. press the "open door" button on your indoor station
-8. open the Home Assitant Logbook view and search for "GDoor", now you should see state changes like
+8. open the Home Assistant Logbook view and search for "GDoor", now you should see state changes like
    ```
    GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
    ```
-9. look for the `BUTTON_RING` action: note the value of the `parameters` field, this is the unique value of your door bell which you can use to identify your door bell in automations.
+9. look for the `BUTTON_RING` action: note the value of the `parameters` field, this is the unique value of your door bell which you can use to identify your door bell in automations (see [protocol](/documentation/protocol.html)).
 10. look for the `DOOR_OPEN` action: note the `busdata` field, if you want to open the door via Home Assistant you need to send this exact value to the MQTT topic `gdoor/bus_tx`
 
 

@@ -20,6 +20,7 @@ The adapter was successfully tested with
 - Gira Wohnungsstation Video AP Plus (1239 03)
 - Gira Türstation AP 1-fach (1266 65/66/67)
 - Gira Türstation AP 3-fach (1267 65/66/67)
+- Gira Transponder-Leseeinheit (2606)
 
 # Building the Adapter
 After you procured an GDoor adapter ([Buy](/buy.html)) you need to:

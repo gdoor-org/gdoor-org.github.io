@@ -94,7 +94,7 @@ to the bus and observing device behavior:
 | 0x28          | Request video (`VIDEO_REQUEST`)|
 | 0x31          | Open door (`DOOR_OPEN`)|
 | 0x41          | Light button pressed (`BUTTON_LIGHT`)|
-| 0x42          | Generic button pressed - which button is specified in ?Param? (`BUTTON`)|
+| 0x42          | Generic button pressed or key card recognized - which button/key is specified in ?Param? (`BUTTON`)|
 
 see [mapping of actions in the firmware source code](https://github.com/gdoor-org/gdoor/blob/main/firmware/esp32/gdoor/src/gdoor_data.cpp).
 
@@ -116,8 +116,8 @@ E.g. a door station with multiple buttons encodes the pressed key number.
 - Second Byte: Unconfirmed - 0x60 for normal press.
 
 #### 3. Action = BUTTON (0x42)
-- First Byte: Always bit 7 seems to be set (0x40), lower bits seem to indicate button number (1,2,3...).
-- Second Byte: 0x40 for ON, 0x50 for OFF.
+- First Byte: Always bit 7 seems to be set (0x40), lower bits seem to indicate button number (1,2,3...). For key cards the first byte indicates the ID of the key card (0x01, 0x02...)
+- Second Byte: 0x40 for ON, 0x50 for OFF, 0x63 for key card.
 
 #### 4. Action = VIDEO_REQUEST (0x28)
 - First Byte:
