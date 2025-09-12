@@ -31,6 +31,7 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
    ```
    GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
    ```
+   In case you don't see those and you have a custom [Home Assistant Recorder configuration](https://www.home-assistant.io/integrations/recorder/), please double-check to include `sensor.gdoor_adapter_bus_data` at least temporarily as it helps during setup.
 9. look for the `BUTTON_RING` action: note the value of the `parameters` field, this is the unique value of your door bell which you can use to identify your door bell in automations (see [protocol](/documentation/protocol.html)).
 10. look for the `DOOR_OPEN` action: note the `busdata` field, if you want to open the door via Home Assistant you need to send this exact value to the MQTT topic `gdoor/bus_tx`
 
@@ -56,6 +57,7 @@ GDoor supports Home Assistant MQTT Auto-Discovery.
    ```
    GDoor changed to {"action": "BUTTON_RING", "parameters": "0360", "source": "A286FD", "destination": "000000", "type": "OUTDOOR", "busdata": "011011A286FD0360A04A"}
    ```
+   In case you don't see those and you have a custom [Home Assistant Recorder configuration](https://www.home-assistant.io/integrations/recorder/), please double-check to include `sensor.gdoor` at least temporarily as it helps during setup.
 7. look for the `BUTTON_RING` action: note the value of the `parameters` field, this is the unique value of your door bell which you can use to identify your door bell in automations.
 8. look for the `DOOR_OPEN` action: copy the value of `busdata` and add the following shell command in `configuration.yaml` to be able to open the door programmatically. Replace `<busdata>` with the copied value.
     ```
